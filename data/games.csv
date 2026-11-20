@@ -337,3 +337,7 @@ matched_at,sport,start_utc,kalshi_start_est_utc,poly_start_utc,kalshi_event,poly
 2026-11-20T16:46:14Z,cbb,2026-11-22T19:30:00Z,2026-11-22T19:30:00Z,2026-11-22T19:30:00Z,KXNCAAMBGAME-26NOV22RMUNMSU,aec-cbb-nmxst-robms-2026-11-22,Robert Morris,New Mexico St.,Robert Morris,NM State,10,172.8
 2026-11-20T16:46:14Z,cfb,2026-11-28T19:00:00Z,2026-11-28T19:00:00Z,2026-11-28T19:00:00Z,KXNCAAFGAME-26NOV28NMSUMTU,aec-cfb-nmxst-mtnst-2026-11-28,New Mexico St.,Middle Tennessee,NM State,Middle Tennessee,01,172.8
 2026-11-20T16:46:14Z,cfb,2026-11-21T20:00:00Z,2026-11-21T20:00:00Z,2026-11-21T20:00:00Z,KXNCAAFGAME-26NOV21DELNMSU,aec-cfb-del-nmxst-2026-11-21,New Mexico St.,Delaware,NM State,Delaware,10,172.8
+2026-11-20T18:16:13Z,cbb,2026-11-24T18:00:00Z,2026-11-24T18:00:00Z,2026-11-24T18:00:00Z,KXNCAAMBGAME-26NOV24SUUFIU,aec-cbb-sutah-flint-2026-11-24,Southern Utah,Florida International,Southern Utah,Florida International,01,200.0
+2026-11-20T18:16:13Z,cbb,2026-11-24T18:00:00Z,2026-11-24T18:00:00Z,2026-11-24T18:00:00Z,KXNCAAMBGAME-26NOV24VSURKSTNH,aec-cbb-vsurk-stnh-2026-11-24,Vermont State-Randolph,Stonehill,Vermont State-Randolph,Stonehill,01,200.0
+2026-11-20T18:16:13Z,cbb,2026-11-24T17:30:00Z,2026-11-24T17:30:00Z,2026-11-24T17:30:00Z,KXNCAAMBGAME-26NOV24BELAKR,aec-cbb-belm-akron-2026-11-24,Belmont,Akron,Belmont,Akron,01,200.0
+2026-11-20T18:16:13Z,cbb,2026-11-24T17:30:00Z,2026-11-24T17:30:00Z,2026-11-24T17:30:00Z,KXNCAAMBGAME-26NOV24SELAUNCO,aec-cbb-selou-ncol-2026-11-24,Northern Colorado,Southeastern Louisiana,Northern Colorado,Southeastern Louisiana,10,200.0
