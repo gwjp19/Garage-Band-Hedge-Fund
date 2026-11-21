@@ -17,8 +17,7 @@ ONE_TRADE_PER_GAP = True    # don't buy again until the gap closes and reopens
 
 # Fees
 KALSHI_FEE_RATE = 0.07      # Kalshi: ceil(0.07 * contracts * p * (1-p)) to the cent, per order
-POLY_US_FEE_RATE = 0.095     # Polymarket US: rate * contracts * p * (1-p). Rate NOT confirmed from the
-                            # official fee page; check docs.polymarket.us/fees and update this.
+POLY_US_FEE_RATE = 0.095     # Polymarket US: rate * contracts * p * (1-p).
 
 # Prices
 MIN_PRICE, MAX_PRICE = 0.03, 0.97   # ignore quotes outside this range (near-settled games)
