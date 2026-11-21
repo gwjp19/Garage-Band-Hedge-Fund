@@ -107,7 +107,7 @@ with contact:
   st.write("I'm a current Mathematics student at Appalachian State University, I enjoy working with prediction markets, sports, and anything statistics or probability related. If you have any questions or advice for the scanner please reach out to me via:")
   st.link_button("LinkedIn","https://www.linkedin.com/in/george-porter-app",)
   st.write("If you want to play with the code:")
-  st.link_button("GitHub", "https://github.com/gwjp19")
+  st.link_button("GitHub", "https://github.com/gwjp19/Garage-Band-Hedge-Fund/tree/main")
   st.write("This is a paper-trading experiment, not financial or betting advice")
 
 
