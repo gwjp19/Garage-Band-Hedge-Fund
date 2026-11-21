@@ -66,8 +66,7 @@ python tests/test_pricing.py           # fee / pricing / order-book checks
 the fee rates.
 
 - **Kalshi fee:** 0.07 × contracts × p × (1 − p), rounded up to the cent per order.
-- **Polymarket US fee:** `POLY_US_FEE_RATE` × contracts × p × (1 − p). **The 0.06 rate is not
-  confirmed from Polymarket US's official fee page.** Check `docs.polymarket.us/fees` and update it.
+- **Polymarket US fee:** `POLY_US_FEE_RATE` × contracts × p × (1 − p).
 
 ## Known limits
 
@@ -76,7 +75,7 @@ the fee rates.
 - **Fills are assumed.** A real order could miss if the book moves first; the logs show how much
   was available at the best price but not whether you'd have got it.
 - **Polling, not streaming.** Gaps shorter than one poll cycle (~20 s or more with many live games)
-  can be missed or partly seen. Both venues offer WebSocket feeds if you want to go faster later.
+  can be missed or partly seen. Both venues offer WebSocket feeds.
 - **GitHub schedule jitter.** Scheduled runs can start late, so a few minutes between runs may be
   missed.
 
