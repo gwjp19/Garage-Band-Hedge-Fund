@@ -1,0 +1,7 @@
+ts_utc,sport,kalshi_event,poly_slug,min_from_start,team0,team1,k_ask0,k_qty0,k_ask1,k_qty1,p_ask0,p_qty0,p_ask1,p_qty1,best_profit_per_pair,best_combo
+2026-11-21T00:00:10Z,cbb,KXNCAAMBGAME-26NOV20NCSTHALL,aec-cbb-ncst-seton-2026-11-20,0.2,NC St.,Seton Hall,0.62,105329.99,0.39,121396.85,0.62,34462.36,0.39,93550.76,-0.04077,0
+2026-11-21T00:00:10Z,cbb,KXNCAAMBGAME-26NOV20TLSAMSST,aec-cbb-tulsa-mspst-2026-11-20,-29.8,Tulsa,Mississippi St.,0.27,4776.96,0.74,16898.2,0.27,3249.67,0.74,12371.61,-0.03533,1
+2026-11-21T00:00:10Z,cbb,KXNCAAMBGAME-26NOV20IOWAXAV,aec-cbb-iowa-xav-2026-11-20,-29.8,Xavier,Iowa,0.61,111481.48,0.4,144520.36,0.61,32209.57,0.4,64819.77,-0.04107,1
+2026-11-21T00:00:11Z,cbb,KXNCAAMBGAME-26NOV20BELLEKY,aec-cbb-bella-ekent-2026-11-20,0.2,Eastern Kentucky,Bellarmine,0.78,11434.33,0.23,3190.0,0.77,12765.31,0.24,53440.32,-0.02303,1
+2026-11-21T00:00:13Z,cbb,KXNCAAMBGAME-26NOV20NIAGDSU,aec-cbb-niagra-delst-2026-11-20,0.2,Niagara,Delaware St.,0.54,38.0,0.5,15.0,0.51,7438.6,0.5,13476.6,-0.043,1
+2026-11-21T00:00:18Z,cbb,KXNCAAMBGAME-26NOV20UTMSIU,aec-cbb-tmrt-sill-2026-11-20,90.3,Tennessee-Martin,Southern Illinois,0.75,7652.74,0.27,4974.72,0.75,4306.29,0.26,8.0,-0.03525,0
