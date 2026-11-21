@@ -8,7 +8,7 @@ import matplotlib.dates as mdates
 from zoneinfo import ZoneInfo
 
 ET = ZoneInfo("America/New_York")
-FEE_CHANGE = pd.Timestamp("2026-11-21 16:14", tz=ET)   
+FEE_CHANGE = pd.Timestamp("2026-11-21 16:16", tz=ET)   
 
 st.set_page_config(page_title="Garage Band Hedge Fund", layout="wide")
 
