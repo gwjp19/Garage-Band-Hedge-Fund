@@ -1,0 +1,12 @@
+ts_utc,sport,kalshi_event,poly_slug,min_from_start,team0,team1,k_ask0,k_qty0,k_ask1,k_qty1,p_ask0,p_qty0,p_ask1,p_qty1,best_profit_per_pair,best_combo
+2026-11-21T04:00:11Z,cbb,KXNCAAMBGAME-26NOV20SLUSMC,aec-cbb-stlou-stmry-2026-11-20,0.2,Saint Mary's,Saint Louis,0.54,10330.01,0.46,10000.0,0.54,46893.68,0.47,83788.29,-0.0323,1
+2026-11-21T04:00:12Z,cbb,KXNCAAMBGAME-26NOV20CSBIDHO,aec-cbb-csu-idaho-2026-11-20,120.2,Idaho,Cal State Bakersfield,,0,,0,,0,,0,,
+2026-11-21T04:00:12Z,cbb,KXNCAAMBGAME-26NOV20MRSHUNC,aec-cbb-marsh-ncar-2026-11-20,120.2,North Carolina,Marshall,,0,,0,,0,,0,,
+2026-11-21T04:00:13Z,cfb,KXNCAAFGAME-26NOV20UTEPAFA,aec-cfb-utep-airf-2026-11-20,180.2,UTEP,Air Force,,0,,0,,0,,0,,
+2026-11-21T04:00:13Z,cfb,KXNCAAFGAME-26NOV20BGSUTOL,aec-cfb-bowlgr-toledo-2026-11-20,210.2,Toledo,Bowling Green,,0,,0,,0,,0,,
+2026-11-21T04:00:31Z,cbb,KXNCAAMBGAME-26NOV20ALSTFRES,aec-cbb-alast-frest-2026-11-20,60.5,Fresno St.,Alabama St.,0.98,9548.03,0.03,25504.62,0.98,15037.29,0.03,36824.58,,
+2026-11-21T04:00:33Z,cfb,KXNCAAFGAME-26NOV20CLEMDUKE,aec-cfb-clmsn-duke-2026-11-20,210.6,Duke,Clemson,0.03,62328.77,0.98,62949.6,0.03,28271.3,0.975,11542.61,,
+2026-11-21T04:00:56Z,cbb,KXNCAAMBGAME-26NOV20NCSTHALL,aec-cbb-ncst-seton-2026-11-20,240.9,NC St.,Seton Hall,0.55,434.04,0.48,23.5,0.55,438.6,0.47,1700.36,-0.05235,0
+2026-11-21T04:00:57Z,cbb,KXNCAAMBGAME-26NOV20SHSUBSU,aec-cbb-smho-boise-2026-11-20,121.0,Sam Houston,Boise St.,,0,,0,,0,,0,,
+2026-11-21T04:00:58Z,cfb,KXNCAAFGAME-26NOV20UNMWYO,aec-cfb-nmx-wyom-2026-11-20,121.0,Wyoming,New Mexico,0.08,82670.86,0.93,91242.94,0.08,33622.35,0.925,23443.66,-0.01436,0
+2026-11-21T04:00:58Z,cfb,KXNCAAFGAME-26NOV20OREMSU,aec-cfb-ore-mst-2026-11-20,181.0,Oregon,Michigan St.,,0,,0,,0,,0,,
