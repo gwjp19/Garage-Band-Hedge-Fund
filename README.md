@@ -87,3 +87,7 @@ market data keys by email request). Write `scanner/venues/<name>.py` with the sa
 as `polymarket_us.py`: `list_games`, `quote` and `result`. Keep keys in GitHub repo
 **Settings → Secrets and variables → Actions** and read them from environment variables. Never
 put keys in the code: the repo is public.
+
+## Updates and Changes
+
+- **Fee Update (Nov 21, 2026** The Polymarket US taker coefficient was changed from the assumed 0.06 to the actual Tier One 0.095. It will be held at 0.095 during the full paper testing to ensure the model is profitable even less favorable conditions. It is worth noting that any trades before this date are slightly optimistic.
