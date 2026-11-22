@@ -4,7 +4,7 @@
     python -m scanner.run --minutes 10    # stop after 10 minutes
     python -m scanner.run --once          # one pass, for testing
 """
-import argparse, os, sys, time, traceback, uuid
+import argparse, os, sys, time, traceback, uuid, threading
 from . import config, store, settle, sync
 from .pricing import price_pair, usable
 from .venues import kalshi, polymarket_us
@@ -48,6 +48,8 @@ class Scanner:
         self.open_gaps = {}      # (kalshi_event, combo) -> gap episode dict
         self.last_snap = {}      # kalshi_event -> ts
         self.snaps = []
+        self.recheck_rows = []
+        self.recheck_lock = threading.Lock()
 
     def scan_game(self, kg, pg, k2p):
         pq = polymarket_us.quote(pg); kq = kalshi.quote(kg)
@@ -110,6 +112,28 @@ class Scanner:
 
     def close_all(self):
         for key in list(self.open_gaps): self.close_gap(key)
+
+    def recheck(self, kg, pg, k2p, i, trade_id, trade_ts):
+        """Runs in its own thread after a paper trade. Re-reads both books at each delay in
+        config.RECHECK_SECONDS and records whether the same combo is still profitable."""
+        j = 1 - i
+        for delay in config.RECHECK_SECONDS:
+            time.sleep(max(0, trade_ts + delay - time.time()))      # wait until `delay` seconds after the trade
+            try:
+                pq = polymarket_us.quote(pg); kq = kalshi.quote(kg)
+            except Exception as e:
+                log("recheck error", kg.game_id, repr(e)[:150]); continue
+            p_ask = [pq.ask[k2p[s]] for s in (0, 1)]; p_qty = [pq.qty[k2p[s]] for s in (0, 1)]   # aligned to Kalshi sides
+            row = {"trade_id": trade_id, "delay_sec": delay, "actual_sec": round(time.time() - trade_ts, 2),
+                   "kalshi_price": kq.ask[i], "poly_price": p_ask[j]}
+            if kq.ok and pq.ok and usable(kq.ask[i]) and usable(p_ask[j]):
+                pr = price_pair(kq.ask[i], kq.qty[i], p_ask[j], p_qty[j])
+                row.update(still_profitable=pr["profit_per_pair"] > config.MIN_EDGE and pr["pairs"] >= 1,
+                           profit_per_pair=pr["profit_per_pair"], pairs=pr["pairs"])
+            else:
+                row.update(still_profitable=False, profit_per_pair="", pairs=0)   # book empty, closed, or price out of range
+            with self.recheck_lock:                  # several rechecks can finish at the same moment
+                self.recheck_rows.append(row)
 
 def git_push():
     sync.save(log)
