@@ -4,8 +4,8 @@
     python -m scanner.run --minutes 10    # stop after 10 minutes
     python -m scanner.run --once          # one pass, for testing
 """
-import argparse, os, subprocess, sys, time, traceback, uuid
-from . import config, store, settle
+import argparse, os, sys, time, traceback, uuid
+from . import config, store, settle, sync
 from .pricing import price_pair, usable
 from .venues import kalshi, polymarket_us
 from .venues.base import VenueGame, Side
@@ -112,13 +112,7 @@ class Scanner:
         for key in list(self.open_gaps): self.close_gap(key)
 
 def git_push():
-    if os.environ.get("GIT_COMMIT") != "1": return
-    cmds = [["git", "add", config.DATA_DIR], ["git", "commit", "-q", "-m", f"scanner data {store.now_iso()}"],
-            ["git", "pull", "-q", "--rebase", "-X", "theirs"], ["git", "push", "-q"]]
-    for c in cmds:
-        r = subprocess.run(c, capture_output=True, text=True)
-        if r.returncode != 0 and c[1] == "commit": return   # nothing new
-        if r.returncode != 0: log("git:", " ".join(c), r.stderr.strip()[:300])
+    sync.save(log)
 
 def main():
     ap = argparse.ArgumentParser(); ap.add_argument("--once", action="store_true"); ap.add_argument("--minutes", type=float)
