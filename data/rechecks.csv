@@ -1,0 +1,7 @@
+trade_id,delay_sec,actual_sec,still_profitable,profit_per_pair,pairs,kalshi_price,poly_price
+7e5566fadf,1,1.17,True,0.00769,100,0.71,0.25
+7e5566fadf,2,2.16,True,0.00769,100,0.71,0.25
+7e5566fadf,5,5.16,True,0.00769,100,0.71,0.25
+87c02402c1,1,1.16,True,0.02449,79,0.65,0.29
+87c02402c1,2,2.16,True,0.02449,79,0.65,0.29
+87c02402c1,5,5.16,True,0.02,1,0.65,0.29
