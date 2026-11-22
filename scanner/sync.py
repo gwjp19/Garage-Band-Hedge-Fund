@@ -10,10 +10,11 @@ from . import config, store
 # Which columns identify the same row in each file
 KEYS = {"trades.csv": ["trade_id"],
         "gaps.csv": ["game_key", "combo", "opened_utc"],
-        "games.csv": ["kalshi_event"]}
+        "games.csv": ["kalshi_event"],
+        "rechecks.csv": ["trade_id","delay_sec"]}
 SNAP_KEY = ["ts_utc", "kalshi_event"]
-HEADERS = {"trades.csv": store.TRADES, "gaps.csv": store.GAPS, "games.csv": store.GAMES}
-SORT_BY = {"trades.csv": "opened_utc", "gaps.csv": "opened_utc", "games.csv": "matched_at"}
+HEADERS = {"trades.csv": store.TRADES, "gaps.csv": store.GAPS, "games.csv": store.GAMES, "rechecks.csv": store.RECHECKS}
+SORT_BY = {"trades.csv": "opened_utc", "gaps.csv": "opened_utc", "games.csv": "matched_at", "rechecks.csv": "trade_id"}
 FINISHED = {"settled", "MISMATCH", "void"}   # a trade in one of these states never goes back to "open"
 
 
