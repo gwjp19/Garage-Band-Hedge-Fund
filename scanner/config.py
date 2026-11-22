@@ -35,3 +35,5 @@ KALSHI_RPS = 8
 POLY_RPS = 10
 
 DATA_DIR = "data"
+
+RECHECK_SECONDS = [1, 2, 5]
