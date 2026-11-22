@@ -15,6 +15,7 @@ GAPS = ["game_key", "sport", "combo", "opened_utc", "closed_utc", "seconds_open"
 SNAP = ["ts_utc", "sport", "kalshi_event", "poly_slug", "min_from_start", "team0", "team1",
         "k_ask0", "k_qty0", "k_ask1", "k_qty1", "p_ask0", "p_qty0", "p_ask1", "p_qty1",
         "best_profit_per_pair", "best_combo"]
+RECHECKS = ["trade_id","delay_sec","still_profitable","profit_per_pair","pairs","kalshi_price","poly_price"]
 
 def path(name): return os.path.join(config.DATA_DIR, name)
 
