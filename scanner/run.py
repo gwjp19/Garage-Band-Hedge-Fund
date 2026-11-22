@@ -104,11 +104,15 @@ class Scanner:
                "poly_price": p_ask[j], "poly_qty_avail": p_qty[j], "quote_gap_sec": round(gap_sec, 2),
                "kalshi_side": i, "poly_side": k2p[j], "status": "open", **pr}
         store.append("trades.csv", store.TRADES, [row])
+        threading.Thread(target=self.recheck, args=(kg, pg, k2p, i, row["trade_id"], time.time()), daemon=True).start()
         log(f"PAPER TRADE {kg.game_id}: {pr['pairs']} pairs, {kg.sides[i].name} on Kalshi @ {kq.ask[i]}, "
             f"{pg.sides[k2p[j]].name} on Polymarket US @ {p_ask[j]}, locks ${pr['locked_profit']:.2f}")
 
     def flush(self):
         store.append_snapshots(self.snaps); self.snaps = []
+        with self.recheck_lock:
+            rows, self.recheck_rows = self.recheck_rows, []
+        store.append("rechecks.csv", store.RECHECKS, rows)
 
     def close_all(self):
         for key in list(self.open_gaps): self.close_gap(key)
