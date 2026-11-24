@@ -5,3 +5,4 @@ data/*.tmp
 .DS_Store
 .env
 *.pem
+data_stream/
