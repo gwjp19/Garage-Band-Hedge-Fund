@@ -578,6 +578,9 @@ trade_id,delay_sec,actual_sec,still_profitable,profit_per_pair,pairs,kalshi_pric
 1ab0120ba4,1,1.17,True,0.01296,100,0.1,0.87
 1ab0120ba4,2,2.19,True,0.01296,100,0.1,0.87
 1ab0120ba4,5,5.22,False,-0.02408,100,0.1,0.91
+1ad942d3f9,1,1.17,True,0.02999,100,0.38,0.55
+1ad942d3f9,2,2.17,False,0.026,0,0.38,0.55
+1ad942d3f9,5,5.17,False,0.026,0,0.38,0.55
 1ae13ab2e6,1,1.18,True,0.02002,100,0.21,0.74
 1ae13ab2e6,2,2.17,True,0.02002,100,0.21,0.74
 1ae13ab2e6,5,5.17,True,0.02002,100,0.21,0.74
@@ -1810,6 +1813,9 @@ trade_id,delay_sec,actual_sec,still_profitable,profit_per_pair,pairs,kalshi_pric
 4fed446d88,1,1.17,True,0.02066,100,0.57,0.37
 4fed446d88,2,2.17,True,0.02066,100,0.57,0.37
 4fed446d88,5,5.17,True,0.028,2,0.56,0.37
+4fee47ff9a,1,1.21,True,0.07069,26,0.54,0.35
+4fee47ff9a,2,2.17,True,0.0685,2,0.54,0.35
+4fee47ff9a,5,5.17,True,0.11089,100,0.5,0.35
 4ff0f2b676,1,1.28,True,0.007,1,0.51,0.44
 4ff0f2b676,2,2.41,True,0.007,1,0.51,0.44
 4ff0f2b676,5,5.23,True,0.007,1,0.51,0.44
