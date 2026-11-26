@@ -35,7 +35,7 @@ def list_games(sport, prefix):
     return games
 
 def quote(game):
-    md = S.get(f"{API}/markets/{game.game_id}/book").get("marketData", {})
+    md = S.get(f"{API}/markets/{game.game_id}/book", {"nc": random.getrandbits(48)}).get("marketData", {})
     ts = time.time()
     if md.get("state") != "MARKET_STATE_OPEN":
         return Quote([None, None], [0, 0], ["", ""], ts, False, md.get("state", "no data"))
